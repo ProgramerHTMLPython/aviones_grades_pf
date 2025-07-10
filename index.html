@@ -1,34 +1,51 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Selector Aleatorio de Aviones y Aeropuertos</title>
 <style>
-  body {
-    background-color: #7D8F97;
-    color: #0A1E2F; /* Azul oscuro */
-    font-family: 'Planer', sans-serif;
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Planer, sans-serif;
+    background: linear-gradient(180deg, #7D8F97 0%, #1E4963 100%);
+    color: #0A1E2F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
-    font-size: 1.5em; /* Aumenta tamaño 1.5x */
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
   }
+
+  body {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .label {
+    margin: 18px 0;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+
   button {
     background-color: #1E4963;
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.5em;
+    padding: clamp(0.6rem, 1.5vw, 1rem) clamp(1.2rem, 3vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     cursor: pointer;
     margin-top: 22px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
   }
-  .label {
-    font-size: 1.5em;
-    margin: 18px 0;
+
+  button:hover {
+    background-color: #155070;
   }
 </style>
 </head>
-<body>
+
 
 <h1>Selector Aleatorio de Aviones y Aeropuertos</h1>
 
